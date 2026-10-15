@@ -1,0 +1,144 @@
+section,controle,nrpn,min_obs,max_obs,note
+LFO2,Rate,7,0,255,3e essai propre (1229 msgs)
+LFO2,Delay Time,8,0,255,propre (717 msgs)
+ARP/SEQ,Rate,157,0,255,lot
+ARP/SEQ,Gate Time,160,0,255,lot
+LFO1,Rate,0,0,255,lot
+LFO1,Delay Time,1,0,255,lot
+OSC1,Pitch Mod,21,0,255,lot
+OSC1,PWM,25,0,255,lot
+OSC2,Pitch Mod,29,0,255,lot
+OSC2,Tone Mod,28,0,255,lot
+OSC2,Pitch,27,0,255,lot
+OSC2,Level,26,0,255,lot
+NOISE,Level,33,0,255,lot
+POLY,Unison Detune,87,0,255,lot
+VCF,Freq (cutoff),39,0,255,lot
+VCF,Res,41,0,255,lot
+VCF,Env,42,0,255,lot
+VCF,LFO,45,0,255,lot
+VCF,Kybd,49,0,255,lot
+VCA,Level,80,0,255,lot
+HPF,Freq,40,0,255,lot
+ENV VCA,Attack,53,0,255,lot
+ENV VCA,Decay,54,0,255,lot
+ENV VCA,Sustain,55,0,255,lot
+ENV VCA,Release,56,0,255,lot
+ENV VCF,Attack,62,0,255,lot (VCF avant MOD suppose par ordre)
+ENV VCF,Decay,63,0,255,lot
+ENV VCF,Sustain,64,0,255,lot
+ENV VCF,Release,65,0,255,lot
+ENV MOD,Attack,71,0,255,lot
+ENV MOD,Decay,72,0,255,lot
+ENV MOD,Sustain,73,0,255,lot
+ENV MOD,Release,74,0,255,lot
+PORTAMENTO,Time (knob),34,0,255,lot
+OSC1,Saw button,19,0,1,ordre des appuis
+OSC1,Pulse button,18,0,1,ordre des appuis
+OSC2,Sync button,20,0,1,ordre des appuis
+VOLUME,knob,aucun,,,aucun message MIDI (potentiometre materiel)
+VCF,2 POLE button,51,0,1,ordre des appuis
+VCF,Invert button,50,0,1,ordre des appuis
+HPF,Boost button,52,0,1,ordre des appuis
+ARP/SEQ,ON/OFF button,155,0,1,ordre des appuis
+GLOBAL,Octave shift (OCT up/down),325,0,4,valeurs vues 1 0 1 2 (centre=2) ; les boutons OCT envoient aussi CC123 x32
+ARP/SEQ,TAP/HOLD / CHORD / POLY CHORD,aucun,,,aucun NRPN observe
+LFO1/LFO2,EDIT buttons,aucun,,,aucun message MIDI (ouvrent seulement une page LCD)
+LFO1,Shape,2,0,6,EDIT LFO1 + DATA ENTRY (7 formes)
+LFO1,Key-Sync,3,0,1,page LFO-1 (LCD) via molette+DATA ENTRY
+LFO1,Arp-Sync,4,0,1,idem
+LFO1,Slew-Rate,6,0,255,test isole (101 msgs)
+LFO1,Phase,5,0,255,ordre des lignes (slew avant phase) confirme aussi par LFO2
+OSC1 (page LCD),RANGE,14,0,2,photo LCD + ordre
+OSC1 (page LCD),P.MOD-SRC,22,0,6,photo LCD + ordre
+OSC1 (page LCD),AFT>P.MOD,23,0,255,photo LCD + ordre
+OSC1 (page LCD),WHEEL>P.MOD,24,0,255,photo LCD + ordre
+OSC1 (page LCD),ligne 5 (valeur MANUAL; libelle illisible),16,0,5,photo LCD + ordre
+OSC1 (page LCD),ligne 6 (valeur OSC1+2; libelle illisible),38,0,1,photo LCD + ordre
+OSC1 (page LCD),KEY-DN-RESET,92,0,1,photo LCD + ordre
+OSC2 (page LCD),RANGE,15,0,2,photo LCD + ordre
+OSC2 (page LCD),P.MOD-SRC,32,0,6,photo LCD + ordre
+OSC2 (page LCD),AFT>P.MOD,30,0,255,photo LCD + ordre
+OSC2 (page LCD),WHEEL>P.MOD,31,0,255,photo LCD + ordre
+OSC2 (page LCD),T.MOD-SRC,17,0,5,photo LCD + ordre
+VCF (page LCD),BASS-BOOST,52,0,1,meme octet que le bouton HPF BOOST
+VCF (page LCD),VELOCITY-SENS,43,0,255,photo LCD + ordre
+VCF (page LCD),P.BEND-FREQ,44,0,255,photo LCD + ordre
+VCF (page LCD),LFO-SELECT (LFO-1/LFO-2),46,0,1,photo LCD + ordre
+VCF (page LCD),AFT-LFO-DEPTH,47,0,255,photo LCD + ordre
+VCF (page LCD),MW-LFO-DEPTH,48,0,255,photo LCD + ordre
+VCF (page LCD),LPF-TYPE (2-POLE/4-POLE),51,0,1,meme octet que le bouton 2 POLE
+VCA (page LCD),ENVELOPE-DEPTH,81,0,255,photo LCD + ordre
+VCA (page LCD),VELOCITY-SENS,82,0,255,photo LCD + ordre
+VCA (page LCD),PAN-SPREAD,83,0,255,photo LCD + ordre
+VCA (page LCD),VCA-MODE (Ballsy/...),347,0,1,GLOBAL (bloc 300..354) - hors programme
+POLY (page LCD VOICE),POLYPHONY,85,0,12,photo LCD + ordre (13 modes)
+POLY (page LCD VOICE),UNISON-DETUNE,87,0,255,meme octet que le slider Unison Detune
+POLY (page LCD VOICE),PRIORITY,84,0,2,photo LCD + ordre (Lowest/Highest/Last)
+POLY (page LCD VOICE),ENV-TRIGGER,86,0,3,photo LCD + ordre
+POLY (page LCD VOICE),OSC-DRIFT,88,0,255,photo LCD + ordre
+POLY (page LCD VOICE),PARAM-DRIFT,89,0,255,photo LCD + ordre
+POLY (page LCD VOICE),DRIFT-RATE,90,0,255,photo LCD + ordre
+POLY (page LCD PITCH),TRANSPOSE,241,80,176,ordre d'apparition (2 essais concordants ; centre 128)
+POLY (page LCD PITCH),PORTA-TIME,34,0,255,meme octet que le potard Portamento
+POLY (page LCD PITCH),PORTA-MODE,35,0,13,photo LCD + ordre (14 modes)
+POLY (page LCD PITCH),PORTA-OSC-BAL,91,0,255,photo LCD + ordre
+POLY (page LCD PITCH),P.BEND-RANGE+,36,0,48,photo LCD + ordre
+POLY (page LCD PITCH),P.BEND-RANGE-,37,0,48,photo LCD + ordre (2e essai)
+POLY (page LCD PITCH),GLOBAL-TUNE,331,0,255,GLOBAL (bloc 300..354) defaut 128
+POLY (page LCD CHAIN),KEY-RANGE (On/Off),350,0,1,GLOBAL ; DEDUIT par ordre/elimination
+POLY (page LCD CHAIN),RANGE-LOWER,351,0,127,GLOBAL ; ordre + defaut 0
+POLY (page LCD CHAIN),RANGE-UPPER,352,0,127,GLOBAL ; ordre + defaut 127
+POLY (page LCD CHAIN),POLY-CHAIN / PROGRAM-LINK,aucun,,,POLY-CHAIN n'emet que CC123 (x64) ; PROGRAM-LINK inactif
+ENV VCA (CURVES),Attack curve,58,0,255,bouton CURVES + slider A
+ENV VCA (CURVES),Decay curve,59,0,255,bouton CURVES + slider D
+ENV VCA (CURVES),Sustain curve,60,0,255,bouton CURVES + slider S
+ENV VCA (CURVES),Release curve,61,0,255,bouton CURVES + slider R
+ENV VCF (CURVES),Attack curve,67,0,255,idem
+ENV VCF (CURVES),Decay curve,68,0,255,idem
+ENV VCF (CURVES),Sustain curve,69,0,255,idem
+ENV VCF (CURVES),Release curve,70,0,255,idem
+ENV MOD (CURVES),Attack curve,76,0,255,idem
+ENV MOD (CURVES),Decay curve,77,0,255,idem
+ENV MOD (CURVES),Sustain curve,78,0,255,idem
+ENV MOD (CURVES),Release curve,79,0,255,idem
+ENV MOD,octet 75 (0..4) role inconnu,75,0,4,vu une fois ; 57 et 66 par symetrie de structure (non observes)
+MOD MATRIX,Slot1 source,93,0,24,ecoute (0..24) verifie sur materiel
+MOD MATRIX,Slot1 destination,94,0,132,idem
+MOD MATRIX,Slot1 depth,95,0,255,idem
+MOD MATRIX,Slot2 source,96,0,24,idem
+MOD MATRIX,Slot2 destination,97,0,132,idem
+MOD MATRIX,Slot2 depth,98,0,255,idem
+MOD MATRIX,Slot8 source,114,0,24,idem
+MOD MATRIX,Slot8 destination,115,0,132,idem
+MOD MATRIX,Slot8 depth,116,0,255,idem
+MOD MATRIX,Slots 3-7 (99..113),99..113,,,DEDUIT (stride 3 verifie sur slots 1 2 8)
+ARP (page LCD ARPEGGIATOR),KEY-SYNC,159,0,1,photo LCD + ordre
+ARP (page LCD ARPEGGIATOR),OCT,164,0,5,photo LCD + ordre
+ARP (page LCD ARPEGGIATOR),MODE,156,0,10,photo LCD + ordre (11 modes)
+ARP (page LCD ARPEGGIATOR),HOLD,161,0,1,photo LCD + ordre
+ARP (page LCD ARPEGGIATOR),CLOCK DIVIDER,158,0,12,photo LCD + ordre (= Arp clock de l'editeur)
+ARP (page LCD ARPEGGIATOR),RATE (BPM),157,0,255,potard ARP Rate
+ARP (page LCD ARPEGGIATOR),SWING,163,0,25,photo LCD + ordre (affiche 50..75)
+ARP (page LCD ARPEGGIATOR),PATTERN,162,0,64,photo LCD + ordre
+CTRL SEQ (page LCD),ENABLE,117,0,1,photo LCD + ordre
+CTRL SEQ (page LCD),CLOCK DIVIDER,118,0,19,photo LCD + ordre
+CTRL SEQ (page LCD),LENGTH,119,0,30,photo LCD + ordre
+CTRL SEQ (page LCD),SWING,120,0,25,photo LCD + ordre
+CTRL SEQ (page LCD),SLEW-RATE,122,0,255,photo LCD + ordre
+CTRL SEQ (page LCD),KEY/LOOP,121,0,2,photo LCD + ordre (3 modes)
+ARP SETTINGS (page LCD),CLOCK,300,0,2,GLOBAL ; photo LCD + ordre (Internal/MIDI(Auto)/USB(Auto))
+ARP SETTINGS (page LCD),TRANSMIT-CLK,345,0,1,GLOBAL ; DEDUIT ordre+defaut
+ARP SETTINGS (page LCD),ARP-TO-MIDI,301,0,1,GLOBAL ; DEDUIT ordre+defaut
+ARP SETTINGS (page LCD),ARP-PARAMS (PROGRAM/GLOBAL),338,0,1,GLOBAL ; DEDUIT ordre+defaut
+FX OVERVIEW,Slot1 type,166,0,34,vu 0..34 pendant les changements de type (borne binaire 35)
+FX OVERVIEW,Slots 2-4 type,179;192;205,0,35,structure prouvee (bornes binaire) ; verifiee slot 2 (type 27 RoomRev)
+FX OVERVIEW,mode ligne du haut (Insert...),222,0,2,ligne 'Insert' de FX OVERVIEW (observe) ; borne binaire 2
+FX OVERVIEW,LVL slot1..4 (colonne LVL),218;219;220;221,0,150,LCD slot 4 affiche 101 = octet 221 (dump) ; borne binaire 150
+FX-2 (page LCD),RoomRev 12 params (180..191),180..191,,VERIFIE 12/12 : maxima observes = |steps|-1 ; valeurs physiques recalculees = LCD
+FX-1 (page LCD),Edison 8 params (167..174),167..174,,structure verifiee (SW=5.0 dB = octet 34/49 pas)
+LFO2 (page LCD),Shape,9,0,6,ecoute page EDIT LFO2
+LFO2 (page LCD),Key-Sync,10,0,1,idem
+LFO2 (page LCD),Arp-Sync,11,0,1,idem
+LFO2 (page LCD),Phase,12,0,255,idem
+LFO2 (page LCD),Slew-Rate,13,0,255,idem

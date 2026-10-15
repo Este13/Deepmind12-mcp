@@ -1,0 +1,10 @@
+work/
+__pycache__/
+*.pyc
+*.exe
+*.gzf
+*.xml
+*.bytes
+ghidra*/
+.claude/
+.mcp.json

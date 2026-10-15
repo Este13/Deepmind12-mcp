@@ -1,0 +1,243 @@
+byte_index(=NRPN),default,max_on_receive(prouve),region(infere sauf mention),sections_ui(bindings),binding_kinds,nom_observe_sur_materiel
+0,0,,,,,LFO1 Rate
+1,0,,,,,LFO1 Delay Time
+2,1,6,,,,LFO1 Shape
+3,0,1,,,,LFO1 Key-Sync
+4,0,1,,,,LFO1 Arp-Sync
+5,0,,,,,LFO1 Phase
+6,0,,,,,LFO1 Slew-Rate
+7,0,,,,,LFO2 Rate
+8,0,,,,,LFO2 Delay Time
+9,1,6,,,,LFO2 (page LCD) Shape
+10,0,1,,,,LFO2 (page LCD) Key-Sync
+11,0,1,,,,LFO2 (page LCD) Arp-Sync
+12,0,,,,,LFO2 (page LCD) Phase
+13,0,,,,,LFO2 (page LCD) Slew-Rate
+14,1,2,,DCO1Section,slider_int,OSC1 (page LCD) RANGE
+15,1,2,,DCO2Section,slider_int,OSC2 (page LCD) RANGE
+16,0,5,,DCO1Section,slider_int,OSC1 (page LCD) ligne 5 (valeur MANUAL; libelle illisible)
+17,0,5,,DCO2Section,slider_int,OSC2 (page LCD) T.MOD-SRC
+18,1,1,,DCO1Section,button,OSC1 Pulse button
+19,1,1,,DCO1Section,button,OSC1 Saw button
+20,0,1,,DCO1Section,button,OSC2 Sync button
+21,0,,,DCO1Section,slider_uchar,OSC1 Pitch Mod
+22,0,6,,DCO1Section,slider_int,OSC1 (page LCD) P.MOD-SRC
+23,0,,,DCO1Section,slider_uchar,OSC1 (page LCD) AFT>P.MOD
+24,0,,,DCO1Section,slider_uchar,OSC1 (page LCD) WHEEL>P.MOD
+25,0,,,DCO1Section,slider_uchar,OSC1 PWM
+26,0,,,DCO2Section,slider_uchar,OSC2 Level
+27,0,,,DCO2Section,slider_uchar,OSC2 Pitch
+28,0,,,DCO2Section,slider_uchar,OSC2 Tone Mod
+29,0,,,DCO2Section,slider_uchar,OSC2 Pitch Mod
+30,0,,,DCO2Section,slider_uchar,OSC2 (page LCD) AFT>P.MOD
+31,0,,,DCO2Section,slider_uchar,OSC2 (page LCD) WHEEL>P.MOD
+32,0,6,,DCO2Section,slider_int,OSC2 (page LCD) P.MOD-SRC
+33,0,,,DCO2Section,slider_uchar,NOISE Level
+34,0,,,PortamentoSection,slider_uchar,POLY (page LCD PITCH) PORTA-TIME
+35,5,13,,PortamentoSection,slider_int,POLY (page LCD PITCH) PORTA-MODE
+36,2,48,,PortamentoSection,slider_uchar,POLY (page LCD PITCH) P.BEND-RANGE+
+37,2,48,,PortamentoSection,slider_uchar,POLY (page LCD PITCH) P.BEND-RANGE-
+38,0,1,,DCO1Section,slider_int,OSC1 (page LCD) ligne 6 (valeur OSC1+2; libelle illisible)
+39,255,,,VCFSection,slider_uchar,VCF Freq (cutoff)
+40,0,,,VCAHPFSection,slider_uchar,HPF Freq
+41,0,,,VCFSection,slider_uchar,VCF Res
+42,0,,,VCFSection,slider_uchar,VCF Env
+43,128,,,VCFSection,slider_uchar,VCF (page LCD) VELOCITY-SENS
+44,0,,,VCFSection,slider_uchar,VCF (page LCD) P.BEND-FREQ
+45,0,,,VCFSection,slider_uchar,VCF LFO
+46,1,1,,VCFSection,slider_int,VCF (page LCD) LFO-SELECT (LFO-1/LFO-2)
+47,0,,,VCFSection,slider_uchar,VCF (page LCD) AFT-LFO-DEPTH
+48,0,,,VCFSection,slider_uchar,VCF (page LCD) MW-LFO-DEPTH
+49,0,,,VCFSection,slider_uchar,VCF Kybd
+50,1,1,,VCFSection,button,VCF Invert button
+51,0,1,,VCFSection,button,VCF (page LCD) LPF-TYPE (2-POLE/4-POLE)
+52,0,1,,VCAHPFSection,button,VCF (page LCD) BASS-BOOST
+53,0,,,,,ENV VCA Attack
+54,128,,,,,ENV VCA Decay
+55,255,,,,,ENV VCA Sustain
+56,128,,,,,ENV VCA Release
+57,0,4,,,,
+58,128,,,,,ENV VCA (CURVES) Attack curve
+59,0,,,,,ENV VCA (CURVES) Decay curve
+60,128,,,,,ENV VCA (CURVES) Sustain curve
+61,0,,,,,ENV VCA (CURVES) Release curve
+62,0,,,,,ENV VCF Attack
+63,128,,,,,ENV VCF Decay
+64,128,,,,,ENV VCF Sustain
+65,128,,,,,ENV VCF Release
+66,0,4,,,,
+67,128,,,,,ENV VCF (CURVES) Attack curve
+68,0,,,,,ENV VCF (CURVES) Decay curve
+69,128,,,,,ENV VCF (CURVES) Sustain curve
+70,0,,,,,ENV VCF (CURVES) Release curve
+71,0,,,,,ENV MOD Attack
+72,128,,,,,ENV MOD Decay
+73,128,,,,,ENV MOD Sustain
+74,128,,,,,ENV MOD Release
+75,0,4,,,,ENV MOD octet 75 (0..4) role inconnu
+76,128,,,,,ENV MOD (CURVES) Attack curve
+77,0,,,,,ENV MOD (CURVES) Decay curve
+78,128,,,,,ENV MOD (CURVES) Sustain curve
+79,0,,,,,ENV MOD (CURVES) Release curve
+80,255,,,VCAHPFSection,slider_uchar,VCA Level
+81,255,,,VCAHPFSection,slider_uchar,VCA (page LCD) ENVELOPE-DEPTH
+82,128,,,VCAHPFSection,slider_uchar,VCA (page LCD) VELOCITY-SENS
+83,128,,,VCAHPFSection,slider_uchar,VCA (page LCD) PAN-SPREAD
+84,2,2,,PortamentoSection,slider_int,POLY (page LCD VOICE) PRIORITY
+85,0,12,special (FUN_140404b70),PortamentoSection,slider_int,POLY (page LCD VOICE) POLYPHONY
+86,0,3,,PortamentoSection,slider_int,POLY (page LCD VOICE) ENV-TRIGGER
+87,0,,,PortamentoSection,slider_uchar,POLY (page LCD VOICE) UNISON-DETUNE
+88,0,,,PortamentoSection,slider_uchar,POLY (page LCD VOICE) OSC-DRIFT
+89,0,,,PortamentoSection,slider_uchar,POLY (page LCD VOICE) PARAM-DRIFT
+90,0,,,PortamentoSection,slider_uchar,POLY (page LCD VOICE) DRIFT-RATE
+91,128,,,PortamentoSection,slider_uchar,POLY (page LCD PITCH) PORTA-OSC-BAL
+92,0,1,,,,OSC1 (page LCD) KEY-DN-RESET
+93,0,24,modmatrix slot 1 source,,,MOD MATRIX Slot1 source
+94,0,132,modmatrix slot 1 destination,shared base 0x140466fb0,callback,MOD MATRIX Slot1 destination
+95,128,,modmatrix slot 1 depth?,,,MOD MATRIX Slot1 depth
+96,0,24,modmatrix slot 2 source,,,MOD MATRIX Slot2 source
+97,0,132,modmatrix slot 2 destination,shared base 0x140466fb0,callback,MOD MATRIX Slot2 destination
+98,128,,modmatrix slot 2 depth?,,,MOD MATRIX Slot2 depth
+99,0,24,modmatrix slot 3 source,,,
+100,0,132,modmatrix slot 3 destination,shared base 0x140466fb0,callback,
+101,128,,modmatrix slot 3 depth?,,,
+102,0,24,modmatrix slot 4 source,,,
+103,0,132,modmatrix slot 4 destination,shared base 0x140466fb0,callback,
+104,128,,modmatrix slot 4 depth?,,,
+105,0,24,modmatrix slot 5 source,,,
+106,0,132,modmatrix slot 5 destination,shared base 0x140466fb0,callback,
+107,128,,modmatrix slot 5 depth?,,,
+108,0,24,modmatrix slot 6 source,,,
+109,0,132,modmatrix slot 6 destination,shared base 0x140466fb0,callback,
+110,128,,modmatrix slot 6 depth?,,,
+111,0,24,modmatrix slot 7 source,,,
+112,0,132,modmatrix slot 7 destination,shared base 0x140466fb0,callback,
+113,128,,modmatrix slot 7 depth?,,,
+114,0,24,modmatrix slot 8 source,,,MOD MATRIX Slot8 source
+115,0,132,modmatrix slot 8 destination,shared base 0x140466fb0,callback,MOD MATRIX Slot8 destination
+116,128,,modmatrix slot 8 depth?,,,MOD MATRIX Slot8 depth
+117,0,1,,ControlSequencerSection,"button,slider_uchar",CTRL SEQ (page LCD) ENABLE
+118,9,19,,ControlSequencerSection,"slider_int,slider_uchar",CTRL SEQ (page LCD) CLOCK DIVIDER
+119,14,30,,ControlSequencerSection,"callback,slider_int,slider_uchar",CTRL SEQ (page LCD) LENGTH
+120,0,25,,ControlSequencerSection,"slider_int,slider_uchar",CTRL SEQ (page LCD) SWING
+121,2,2,,ControlSequencerSection,"slider_int,slider_uchar",CTRL SEQ (page LCD) KEY/LOOP
+122,0,,,ControlSequencerSection,slider_uchar,CTRL SEQ (page LCD) SLEW-RATE
+123,128,,,,,
+124,128,,,,,
+125,128,,,,,
+126,128,,,,,
+127,128,,,,,
+128,128,,,,,
+129,128,,,,,
+130,128,,,,,
+131,128,,,,,
+132,128,,,,,
+133,128,,,,,
+134,128,,,,,
+135,128,,,,,
+136,128,,,,,
+137,128,,,,,
+138,128,,,,,
+139,128,,,,,
+140,128,,,,,
+141,128,,,,,
+142,128,,,,,
+143,128,,,,,
+144,128,,,,,
+145,128,,,,,
+146,128,,,,,
+147,128,,,,,
+148,128,,,,,
+149,128,,,,,
+150,128,,,,,
+151,128,,,,,
+152,128,,,,,
+153,128,,,,,
+154,128,,,,,
+155,0,1,,ArpeggiatorSection/page globale 0x1404247a0,"button,slider_uchar",ARP/SEQ ON/OFF button
+156,0,10,,ArpeggiatorSection/page globale 0x1404247a0,"slider_int,slider_uchar",ARP (page LCD ARPEGGIATOR) MODE
+157,120,255,,ArpeggiatorSection/page globale 0x1404247a0,slider_uchar,ARP (page LCD ARPEGGIATOR) RATE (BPM)
+158,9,12,,ArpeggiatorSection/page globale 0x1404247a0,"slider_int,slider_uchar",ARP (page LCD ARPEGGIATOR) CLOCK DIVIDER
+159,1,1,,ArpeggiatorSection/page globale 0x1404247a0,"button,slider_uchar",ARP (page LCD ARPEGGIATOR) KEY-SYNC
+160,128,,,ArpeggiatorSection/page globale 0x1404247a0,slider_uchar,ARP/SEQ Gate Time
+161,0,1,,page globale 0x1404247a0,button,ARP (page LCD ARPEGGIATOR) HOLD
+162,0,64,,page globale 0x1404247a0,callback,ARP (page LCD ARPEGGIATOR) PATTERN
+163,0,25,,ArpeggiatorSection/page globale 0x1404247a0,slider_uchar,ARP (page LCD ARPEGGIATOR) SWING
+164,1,5,,page globale 0x1404247a0,slider_int,ARP (page LCD ARPEGGIATOR) OCT
+165,0,9,,EffectsSection routing,"callback,slider_uchar",
+166,0,35,fx slot 1 type,,callback,FX OVERVIEW Slot1 type
+167,0,,fx slot 1 param 0,,,
+168,0,,fx slot 1 param 1,,,
+169,0,,fx slot 1 param 2,,,
+170,0,,fx slot 1 param 3,,,
+171,0,,fx slot 1 param 4,,,
+172,0,,fx slot 1 param 5,,,
+173,0,,fx slot 1 param 6,,,
+174,0,,fx slot 1 param 7,,,
+175,0,,fx slot 1 param 8,,,
+176,0,,fx slot 1 param 9,,,
+177,0,,fx slot 1 param 10,,,
+178,0,,fx slot 1 param 11,,,
+179,0,35,fx slot 2 type,,callback,FX OVERVIEW Slots 2-4 type
+180,0,,fx slot 2 param 0,,,
+181,0,,fx slot 2 param 1,,,
+182,0,,fx slot 2 param 2,,,
+183,0,,fx slot 2 param 3,,,
+184,0,,fx slot 2 param 4,,,
+185,0,,fx slot 2 param 5,,,
+186,0,,fx slot 2 param 6,,,
+187,0,,fx slot 2 param 7,,,
+188,0,,fx slot 2 param 8,,,
+189,0,,fx slot 2 param 9,,,
+190,0,,fx slot 2 param 10,,,
+191,0,,fx slot 2 param 11,,,
+192,0,35,fx slot 3 type,,callback,FX OVERVIEW Slots 2-4 type
+193,0,,fx slot 3 param 0,,,
+194,0,,fx slot 3 param 1,,,
+195,0,,fx slot 3 param 2,,,
+196,0,,fx slot 3 param 3,,,
+197,0,,fx slot 3 param 4,,,
+198,0,,fx slot 3 param 5,,,
+199,0,,fx slot 3 param 6,,,
+200,0,,fx slot 3 param 7,,,
+201,0,,fx slot 3 param 8,,,
+202,0,,fx slot 3 param 9,,,
+203,0,,fx slot 3 param 10,,,
+204,0,,fx slot 3 param 11,,,
+205,0,35,fx slot 4 type,,callback,FX OVERVIEW Slots 2-4 type
+206,0,,fx slot 4 param 0,,,
+207,0,,fx slot 4 param 1,,,
+208,0,,fx slot 4 param 2,,,
+209,0,,fx slot 4 param 3,,,
+210,0,,fx slot 4 param 4,,,
+211,0,,fx slot 4 param 5,,,
+212,0,,fx slot 4 param 6,,,
+213,0,,fx slot 4 param 7,,,
+214,0,,fx slot 4 param 8,,,
+215,0,,fx slot 4 param 9,,,
+216,0,,fx slot 4 param 10,,,
+217,0,,fx slot 4 param 11,,,
+218,0,150,fx 1 level?,,,FX OVERVIEW LVL slot1..4 (colonne LVL)
+219,100,150,fx 2 level?,,,FX OVERVIEW LVL slot1..4 (colonne LVL)
+220,100,150,fx 3 level?,,,FX OVERVIEW LVL slot1..4 (colonne LVL)
+221,100,150,fx 4 level?,,,FX OVERVIEW LVL slot1..4 (colonne LVL)
+222,1,2,,EffectsSection routing,slider_uchar,FX OVERVIEW mode ligne du haut (Insert...)
+223,68,,name,,,
+224,101,,name,,,
+225,102,,name,,,
+226,97,,name,,,
+227,117,,name,,,
+228,108,,name,,,
+229,116,,name,,,
+230,32,,name,,,
+231,80,,name,,,
+232,114,,name,,,
+233,111,,name,,,
+234,103,,name,,,
+235,114,,name,,,
+236,97,,name,,,
+237,109,,name,,,
+238,0,,name,,,
+239,0,,,,,
+240,0,16,,,,
+241,128,,,PortamentoSection,slider_uchar,POLY (page LCD PITCH) TRANSPOSE

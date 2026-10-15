@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "deepmind12": { "command": "python", "args": ["dm12_mcp/server.py"] }
+  }
+}
